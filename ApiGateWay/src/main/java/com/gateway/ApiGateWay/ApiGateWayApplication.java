@@ -1,16 +1,16 @@
-package com.tushar.hotel.HotelServices;
+package com.gateway.ApiGateWay;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+
 
 @SpringBootApplication
-@EnableEurekaServer
-public class HotelServicesApplication {
+@EnableDiscoveryClient
+public class ApiGateWayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HotelServicesApplication.class, args);
+		SpringApplication.run(ApiGateWayApplication.class, args);
 	}
 
 }

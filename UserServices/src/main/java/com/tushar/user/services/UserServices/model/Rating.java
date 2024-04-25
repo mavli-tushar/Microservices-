@@ -1,11 +1,12 @@
 package com.tushar.user.services.UserServices.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
+@Builder
 @Data
 public class Rating {
     private String rateId;
@@ -13,4 +14,5 @@ public class Rating {
     private String hotelId;
     private int rating;
     private String feedback;
+    private Hotel hotel;
 }
